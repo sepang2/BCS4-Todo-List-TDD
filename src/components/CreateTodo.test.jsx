@@ -16,14 +16,14 @@ describe("<CreateTodo />", () => {
     };
   };
 
-  it("check input & button", () => {
+  it("test input & button", () => {
     const { input, submit } = setup();
 
     expect(input).toBeTruthy();
     expect(submit).toBeTruthy();
   });
 
-  it("check input", () => {
+  it("test input value", () => {
     const { input } = setup();
 
     fireEvent.change(input, {
